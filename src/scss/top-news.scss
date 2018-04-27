@@ -1,0 +1,43 @@
+@import "partials/params";
+@import "partials/mixins";
+
+#top-news{
+
+  & .viewport{
+    display: flex;
+    justify-content: space-between;
+
+    & .top-news__tile{
+      width: 31.3%;
+
+      & a{
+        color: $black-medium;
+        & .top-news__wrapper{
+
+          & .top-news__img{
+              position: relative;
+            & img{
+              width: 100%;
+              display: block;
+
+            }
+            & .overlay{
+              @include overlay-img;
+            }
+          }
+          & h3{
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            margin-top: 1rem;
+          }
+        }
+        &:hover{
+          color:$main-blue;
+          transition: .3s;
+        }
+      }
+    }
+  }
+}
+
+

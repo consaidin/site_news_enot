@@ -1,0 +1,11 @@
+@import "partials/params";
+@import "partials/mixins";
+
+#footer{
+  flex: 0 0 auto;
+  background-color: $footer-bg;
+  & .viewport{
+
+
+  }
+}

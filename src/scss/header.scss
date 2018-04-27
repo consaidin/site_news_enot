@@ -1,0 +1,135 @@
+@import "partials/params";
+@import "partials/mixins";
+
+#header{
+  background-color: $main-blue;
+  & .viewport{
+
+    & .logo{
+      text-align: right;
+      padding: 1.375rem 3.75rem 0 0;
+      @include medium-screen{
+        text-align: center;
+        padding: 1.375rem 0;
+      }
+      & a{
+
+        & img{
+
+        }
+      }
+    }
+    & nav{
+
+      & ul{
+        @include clear-list;
+        @include medium-screen{
+          display: none;
+        }
+        display: flex;
+        & li{
+          padding: 1rem 0.625rem;
+          & a{
+          color: #ffffff;
+           text-transform: uppercase;
+            &:hover{
+              color: $orange;
+              transition: all .5s;
+            }
+
+          }
+        }
+      }
+    }
+  }
+  #top-menu{
+    background-color: #ffffff;
+    border-bottom: 1px solid $grey;
+    box-sizing: border-box;
+    width: 100%;
+    & .top-menu__wrapper{
+      display: flex;
+      justify-content: space-between;
+      & nav{
+        & ul{
+          @include medium-screen{
+            display: none;
+          }
+          @include clear-list;
+          display: flex;
+          & li{
+            padding: 0.9rem 0.625rem;
+            & a{
+              font-size: 0.9rem;
+              text-transform: uppercase;
+              color: #000000;
+              &.active{
+                color: $main-blue;
+              }
+
+            }
+          }
+        }
+      }
+      & .search-icon{
+        margin: auto 0;
+        cursor: pointer;
+        color: $greyish;
+
+      }
+      & .search{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        right: 0;
+        top: 0;
+        background-color: rgba(0,0,0, .8);
+        display: none;
+        z-index: 1;
+        & .close{
+          position: absolute;
+          right: 0;
+          top: 0;
+          cursor: pointer;
+          color: $light-grey;
+          padding: 10px;
+        }
+        & .search-wrapper{
+          text-align: center;
+          margin-top: 10%;
+          @include medium-screen{
+            margin-top: 20%;
+          }
+
+          & input{
+            width: 60%;
+            height: 41.5px;
+            padding: 0 10px;
+            color: #666;
+            outline: none;
+            font-size: 16px;
+            box-sizing: border-box;
+            @include medium-screen{
+              height: 31.5px;
+            }
+          }
+          & button{
+            @include medium-screen{
+              line-height: 30px;
+            }
+            border: none;
+            background: $main-blue;
+            padding: 3px 15px 0 15px;
+            color: #fff;
+            cursor: pointer;
+            font-size: 12px;
+            line-height: 40px;
+            text-transform: uppercase;
+            margin-left: 10px;
+
+          }
+        }
+      }
+    }
+  }
+}

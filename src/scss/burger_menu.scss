@@ -1,0 +1,69 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.toggle_menu{
+  @include medium-screen{
+    display: block;
+    margin: 8px 0;
+    outline: none;
+  }
+  display: none;
+  cursor: pointer;
+  border: none;
+  background-color: #ffffff;
+  & .burger{
+  display: block;
+    & .burger_top{
+      width: 40px;
+      height: 5px;
+      background: $greyish-brown;
+      border: none;
+      border-radius: 4px 4px 4px 4px;
+      display: block;
+      transition: all .2s;
+      position: relative;
+    }
+    & .burger_bottom{
+      width: 40px;
+      height: 5px;
+      margin-top: 4px;
+      background: $greyish-brown;
+      border-radius: 4px 4px 4px 4px;
+      display: block;
+      transition: all .2s;
+      transition-delay: 0.1s;
+      position: relative;
+
+    }
+    & .burger_footer{
+      width: 40px;
+      height: 5px;
+      margin-top: 4px;
+      background: $greyish-brown;
+      display: block;
+      border-radius: 4px 4px 4px 4px;
+    }
+  }
+
+
+}
+.burger_active{
+
+  & .burger_top{
+    top: 9px;
+
+    transform: rotate(-45deg);
+
+  }
+
+  & .burger_bottom{
+    top: 0;
+    transform: rotate(45deg);
+
+  }
+  & .burger_footer{
+    opacity: 0;
+
+    transform: rotate(180deg);
+  }
+}
