@@ -55,9 +55,11 @@
         @include medium-screen{
           display: none;
         }
+        margin-left: 10px;
 
         & .widgets-top__item{
           width: 300px;
+
         }
         & :nth-child(1){
           margin-bottom: 10px;
