@@ -110,12 +110,13 @@
             font-size: 16px;
             box-sizing: border-box;
             @include medium-screen{
-              height: 31.5px;
+              height: 38.5px;
+              width: 78%;
             }
           }
           & button{
             @include medium-screen{
-              line-height: 30px;
+              line-height: 38px;
             }
             border: none;
             background: $main-blue;
