@@ -27,8 +27,6 @@ $(document).ready(function () {
             $(".menu-active").fadeIn(300);
             $(".menu-active ul li a").addClass("fadeInUp animated");
         };
-
-
     });
 
     $(".menu-active ul li a").click(function () {
