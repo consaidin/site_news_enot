@@ -15,15 +15,24 @@ $(document).ready(function () {
         $(this).addClass("active");
     });
     $(".toggle_menu").click(function () {
-       $(".burger").toggleClass("burger_active");
+        $(".burger").toggleClass("burger_active");
     });
-    
+
     $(".toggle_menu").click(function () {
-        if($(".menu-active").is(":visible")) {
+        if ($(".menu-active").is(":visible")) {
             $(".menu-active").fadeOut(300);
+            $(".menu-active ul li a").removeClass("fadeInUp animated");
+
         } else {
             $(".menu-active").fadeIn(300);
+            $(".menu-active ul li a").addClass("fadeInUp animated");
         };
 
+
+    });
+
+    $(".menu-active ul li a").click(function () {
+        $(".menu-active").fadeOut(300);
+        $(".burger").toggleClass("burger_active");
     });
 });
