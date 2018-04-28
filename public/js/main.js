@@ -17,5 +17,14 @@ $(document).ready(function () {
     $(".toggle_menu").click(function () {
        $(".burger").toggleClass("burger_active");
     });
+    $(".toggle_menu").click(function () {
+        if ($(".menu_active").is(":visible")) {
+            $(".menu_active").fadeOut(300);
+        } else {
+            $(".menu_active").fadeIn(300);
+        };
+
+    });
+
 
 });
