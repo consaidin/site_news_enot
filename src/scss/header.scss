@@ -32,6 +32,7 @@
           & a{
           color: #ffffff;
            text-transform: uppercase;
+            transition: all .5s;
             &:hover{
               color: $orange;
               transition: all .5s;
