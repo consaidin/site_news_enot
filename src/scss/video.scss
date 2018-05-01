@@ -11,7 +11,7 @@
       width: 40%;
       background-color: $dark-blue-grey;
       padding: 1rem 1rem 1.5625rem 1rem;
-      a{
+
 
         .video-block1__wrapper{
           position: relative;
@@ -34,6 +34,7 @@
             top: 50%;
             transform: translateY(-50%);
             left: 50%;
+            cursor: pointer;
             i{
               color: rgba(244,244,244, .9);
               transform: translateX(-50%);
@@ -48,7 +49,7 @@
           padding-top: 1rem;
 
         }
-      }
+
     }
     .video-block2{
 
