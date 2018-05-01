@@ -81,7 +81,9 @@
     }
     & .publications{
 
-
+      & .headings-title{
+        @include title;
+      }
     }
   }
 }
