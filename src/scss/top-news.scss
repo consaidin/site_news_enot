@@ -1,38 +1,47 @@
 @import "partials/params";
 @import "partials/mixins";
 
-#top-news{
+#top-news {
 
-  & .viewport{
+  & .viewport {
     display: flex;
     justify-content: space-between;
+    @include medium-screen {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
 
-    & .top-news__tile{
+    & .top-news__tile {
       width: 31.3%;
-
-      & a{
+      @include medium-screen {
+        width: 48%;
+        &:last-child{
+          margin: 1.875rem auto 0 auto;
+        }
+      }
+      & a {
         color: $black-medium;
-        & .top-news__wrapper{
+        & .top-news__wrapper {
 
-          & .top-news__img{
-              position: relative;
-            & img{
+          & .top-news__img {
+            position: relative;
+            & img {
               width: 100%;
               display: block;
 
             }
-            & .overlay{
+            & .overlay {
               @include overlay-img;
             }
           }
-          & h3{
+          & h3 {
             font-size: 1.2rem;
             text-transform: uppercase;
             margin-top: 1rem;
           }
         }
-        &:hover{
-          color:$main-blue;
+        &:hover {
+          color: $main-blue;
           transition: .3s;
 
         }

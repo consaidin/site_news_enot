@@ -6,10 +6,17 @@
   & .viewport {
     display: flex;
     justify-content: space-between;
+    @include medium-screen {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
     & .readable {
       width: 31.3%;
       display: flex;
       flex-direction: column;
+      @include medium-screen{
+        width: 58%;
+      }
       & .headings-title {
 
         @include title;
@@ -41,6 +48,9 @@
     }
     & .day-news {
       width: 25%;
+      @include medium-screen{
+        width: 38%;
+      }
       & .headings-title {
         @include title;
       }
@@ -86,6 +96,10 @@
     }
     & .publications {
       width: 40%;
+      @include medium-screen{
+        width: 100%;
+        margin-top: 1.875rem;
+      }
       & .headings-title {
         @include title;
       }
