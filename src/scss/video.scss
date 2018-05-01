@@ -1,3 +1,61 @@
 @import "partials/params";
 @import "partials/mixins";
 
+#video{
+
+  .viewport{
+    display: flex;
+    justify-content: space-between;
+
+    .video-block1{
+      width: 40%;
+      background-color: $dark-blue-grey;
+      padding: 1rem 1rem 1.5625rem 1rem;
+      a{
+
+        .video-block1__wrapper{
+          position: relative;
+          img{
+            width: 100%;
+            display: block;
+
+          }
+          .overlay{
+            @include overlay-img;
+            background-color: rgba(0,0,0, 0.3);
+            &:hover{
+              background-color: rgba(0,0,0, 0.6);
+            }
+
+          }
+          .video-icon{
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 50%;
+            i{
+              color: rgba(244,244,244, .9);
+              transform: translateX(-50%);
+            }
+          }
+        }
+        .video-block1__title{
+          color: #ffffff;
+          font-size: 0.825em;
+          text-transform: uppercase;
+          font-weight: bold;
+          padding-top: 1rem;
+
+        }
+      }
+    }
+    .video-block2{
+
+
+    }
+  }
+}
+.video-icon__active{
+  display: none;
+}

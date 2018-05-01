@@ -33,4 +33,8 @@ $(document).ready(function () {
         $(".menu-active").fadeOut(300);
         $(".burger").toggleClass("burger_active");
     });
+
+    $(".video-icon").click(function () {
+        $(".video-icon").addClass("video-icon__active");
+    });
 });
