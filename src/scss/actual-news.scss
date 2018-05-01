@@ -1,31 +1,32 @@
 @import "partials/params";
 @import "partials/mixins";
 
-#actual-news{
+#actual-news {
 
-  & .viewport{
-  display: flex;
-    & .readable{
+  & .viewport {
+    display: flex;
+    justify-content: space-between;
+    & .readable {
       width: 31.3%;
-      & .headings-title{
+      & .headings-title {
 
         @include title;
         border-bottom: 1px solid $orange;
       }
 
-      & .readable-content{
+      & .readable-content {
         margin-top: 1rem;
         background-color: $grey-medium;
         padding: 0 1.32rem;
-        & ul{
+        & ul {
           @include clear-list;
-          & li{
+          & li {
             padding: 1.25em 0;
             border-bottom: 1px solid $grey-greyish;
-            &:last-child{
+            &:last-child {
               border-bottom: none;
             }
-            & a{
+            & a {
               color: $greyish-brown;
               font-size: 0.8125rem;
               text-transform: uppercase;
@@ -35,43 +36,43 @@
         }
       }
     }
-    & .day-news{
-      width: 28%;
-      & .headings-title{
+    & .day-news {
+      width: 25%;
+      & .headings-title {
         @include title;
       }
-      & .day-news__content{
+      & .day-news__content {
 
-        & .day-news__img{
+        & .day-news__img {
           position: relative;
-          & a{
+          & a {
 
-            & img{
+            & img {
               width: 100%;
               display: block;
 
             }
           }
-          & .overlay{
+          & .overlay {
             @include overlay-img;
 
           }
         }
-        & ul{
+        & ul {
           @include clear-list;
-          & li{
+          & li {
             padding: 1.25em 0;
             border-bottom: 1px solid $blue;
-            &:last-child{
+            &:last-child {
               border-bottom: none;
             }
-            & a{
+            & a {
               font-size: 0.8125rem;
               color: $greyish-brown;
               text-transform: uppercase;
 
             }
-            & #first-item{
+            & #first-item {
               color: #000000;
               font-weight: bold;
             }
@@ -79,11 +80,75 @@
         }
       }
     }
-    & .publications{
-
-      & .headings-title{
+    & .publications {
+      width: 40%;
+      & .headings-title {
         @include title;
       }
+      & .publications-content {
+
+        & .publications-block__top {
+          padding: 0.9em;
+          border: 1px solid $orange;
+          text-align: center;
+
+          & a {
+
+            & .publications-block__author {
+              font-size: 0.625em;
+              color: $orange;
+
+            }
+            & .publications-block__title {
+              padding: 0.5em 0;
+              font-size: 0.825em;
+              text-transform: uppercase;
+              font-weight: bold;
+              color: #000000;
+
+            }
+            & p {
+              margin: 0;
+              padding: 0;
+              font-size: 0.825em;
+              color: $greyish;
+
+            }
+          }
+        }
+        & .publications-block__bottom {
+
+          padding: 0.9em 2em 0.9em 0.9em;
+          background-color: $dark-blue-grey;
+          & .publications-block__title--bottom {
+            color: #ffffff;
+            font-size: 0.825em;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding-bottom: 0.8em;
+
+          }
+          & p {
+            margin: 0;
+            padding: 0;
+            font-size: 0.825em;
+            color: $greyish;
+          }
+          & .publications-block__author {
+            font-size: 0.625em;
+            color: $orange;
+            padding-top: 0.8em;
+
+          }
+        }
+      }
     }
+  }
+}
+
+.publications-block{
+  margin-bottom: 1.3em;
+  &:last-child{
+    margin-bottom: 0;
   }
 }
