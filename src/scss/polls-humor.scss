@@ -32,13 +32,17 @@
             font-size: 0.8125rem;
             color: $polls-grey;
             float: left;
-            i{
 
+            label{
+
+              input{
+                outline: none;
+              }
             }
           }
-          .polls__link{
+          .polls__variants{
             font-size: 0.8125rem;
-            margin-left: 1.75em;
+            margin-left: 2.4em;
             a{
               color: #000000;
 
