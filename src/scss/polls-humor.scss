@@ -1,2 +1,18 @@
 @import "partials/params";
 @import "partials/mixins";
+
+#polls-humor{
+
+  .viewport{
+    display: flex;
+    justify-content: space-between;
+    .polls{
+
+
+    }
+    .humor{
+
+
+    }
+  }
+}
