@@ -74,7 +74,7 @@
         }
         .comments{
           text-align: right;
-          padding-top: 1.5em;
+          margin-top: 1em;
           a{
             font-size: 1.1em;
 
@@ -84,7 +84,26 @@
       }
     }
     .humor {
-      width: 45%;
+      width: 42.5%;
+
+      .headings-title{
+        @include title;
+
+      }
+      .humor__img{
+        position: relative;
+        a{
+
+          img{
+            width: 100%;
+            display: block;
+          }
+          .overlay{
+            @include overlay-img;
+          }
+        }
+
+      }
 
     }
   }
