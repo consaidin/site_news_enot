@@ -10,6 +10,9 @@
       flex-direction: row;
       flex-wrap: wrap;
     }
+    @include small-screen{
+      display: block;
+    }
     & .readable {
       width: 31.3%;
       display: flex;
@@ -17,11 +20,15 @@
       @include medium-screen{
         width: 58%;
       }
+      @include small-screen{
+        width: 100%;
+      }
       & .headings-title {
 
         @include title;
         border-bottom: 1px solid $orange;
       }
+
 
       & .readable-content {
         margin-top: 1rem;
@@ -51,8 +58,14 @@
       @include medium-screen{
         width: 38%;
       }
+      @include small-screen{
+        width: 100%;
+      }
       & .headings-title {
         @include title;
+        @include small-screen{
+          margin-top: 20px;
+        }
       }
       & .day-news__content {
 
