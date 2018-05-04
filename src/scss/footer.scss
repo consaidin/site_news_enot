@@ -17,8 +17,11 @@
         padding-top: 30px;
         a {
           color: $greyish;
-
+          transition: all .5s ease;
           padding-right: 20px;
+          &:hover{
+            color: $greyish-brown;
+          }
           i {
 
           }
