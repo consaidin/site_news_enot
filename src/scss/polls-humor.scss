@@ -8,12 +8,15 @@
     justify-content: space-between;
     .polls {
       width: 55%;
+      display: flex;
+      flex-direction: column;
       .headings-title {
         @include title;
         border-bottom: 1px solid $blue;
       }
 
       &__wrapper {
+        flex-grow: 1;
         margin-top: 1em;
         padding: 1rem;
         background-color: $grey-medium;
@@ -68,6 +71,15 @@
             }
           }
 
+        }
+        .comments{
+          text-align: right;
+          padding-top: 1.5em;
+          a{
+            font-size: 1.1em;
+
+            color: $blue;
+          }
         }
       }
     }
