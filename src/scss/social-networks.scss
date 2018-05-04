@@ -1,0 +1,23 @@
+@import "partials/params";
+@import "partials/mixins";
+
+#social-networks {
+
+  .viewport {
+
+    .headings-title {
+      @include title;
+      border-bottom: 1px solid $blue;
+    }
+
+    .social-networks__wrapper {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1em;
+      .social-networks__item {
+        width: 30%;
+
+      }
+    }
+  }
+}
