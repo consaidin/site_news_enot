@@ -1,23 +1,23 @@
 @import "partials/params";
 @import "partials/mixins";
 
-#polls-humor{
+#polls-humor {
 
-  .viewport{
+  .viewport {
     display: flex;
     justify-content: space-between;
-    .polls{
+    .polls {
       width: 55%;
-      .headings-title{
+      .headings-title {
         @include title;
         border-bottom: 1px solid $blue;
       }
 
-      &__wrapper{
+      &__wrapper {
         margin-top: 1em;
         padding: 1rem;
         background-color: $grey-medium;
-        .polls__title{
+        .polls__title {
           border-bottom: 1px solid $orange;
           padding-bottom: 1em;
 
@@ -26,35 +26,75 @@
           text-transform: uppercase;
 
         }
-        .polls__item{
+        .polls__item {
           padding-top: 1.25rem;
-          .polls__icon{
-            font-size: 0.8125rem;
-            color: $polls-grey;
-            float: left;
 
-            label{
+          font-size: 0.8125rem;
+          color: $polls-grey;
 
-              input[type="radio"]{
-                outline: none;
-              }
+          input[type="radio"] {
+            display: none;
+            &:checked + label:before {
+              background-color: $orange;
+            }
+
+          }
+          label {
+            font-size: 0.9em;
+            color: #000000;
+            display: inline-block;
+
+
+
+            &:before {
+              content: '';
+              width: 1.8em;
+              height: 1.8em;
+              vertical-align: middle;
+              background-color: #fff;
+              display: inline-block;
+              border-radius: 50%;
+              border: 2.5px solid #ffffff;
+              box-sizing: border-box;
+              box-shadow: 0 5px 10px rgba(0, 0, 1, .2);
+              transition: all .2s;
+              float: left;
+
+            }
+            span {
+              margin-left: 3em;
+              display: block;
+              padding-top: 3px;
             }
           }
-          .polls__variants{
-            font-size: 0.8125rem;
-            margin-left: 2.4em;
-            a{
-              color: #000000;
 
-
-            }
-          }
         }
       }
     }
-    .humor{
+    .humor {
       width: 45%;
 
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
