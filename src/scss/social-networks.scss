@@ -14,8 +14,18 @@
       display: flex;
       justify-content: space-between;
       margin-top: 1em;
+      @include medium-screen {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
       .social-networks__item {
         width: 30%;
+        @include medium-screen{
+          width: 48%;
+          &:last-child{
+            margin: 1.875rem auto 0 auto;
+          }
+        }
 
       }
     }
