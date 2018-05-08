@@ -1,0 +1,102 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.page-block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-block {
+  padding-top: 4.125rem;
+  display: flex;
+  .block-left {
+    width: 65%;
+    h2 {
+      overflow: hidden;
+      text-align: center;
+      color: #000000;
+      &:before {
+        content: '';
+        height: 1px;
+        width: 100%;
+        display: inline-block;
+        background-color: $grey-greyish;
+        vertical-align: middle;
+        margin-left: -100%;
+        margin-right: 5%;
+      }
+      &:after {
+        content: '';
+        height: 1px;
+        width: 100%;
+        display: inline-block;
+        background-color: $grey-greyish;
+        vertical-align: middle;
+        margin-right: -100%;
+        margin-left: 5%;
+      }
+    }
+    .block-left__item-case {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1.5em;
+      .block-left__item-case1 {
+
+        width: 40%;
+        position: relative;
+        a {
+
+          img {
+            width: 100%;
+            height: 100%;
+            display: block;
+
+          }
+          .overlay {
+            @include overlay-img;
+          }
+        }
+      }
+      .block-left__item-case2 {
+        width: 54%;
+
+        span {
+          font-size: 0.7em;
+          padding: 0 1em;
+          color: $greyish;
+
+          border-right: 1px solid $greyish;
+          border-left: 1px solid $greyish;
+
+        }
+        .block-left__item-title {
+          font-size: 1em;
+          font-weight: bold;
+          padding: 10px 0 15px 0;
+          transition: all .5s ease;
+          a {
+            color: $black-medium;
+            &:hover{
+              color: $main-blue;
+            }
+          }
+        }
+        .block-left__item-description {
+
+          p {
+            margin: 0;
+            padding: 0;
+            font-size: .7rem;
+            color: $black-medium;
+          }
+        }
+      }
+    }
+
+  }
+  .block-right {
+
+    width: 30%;
+  }
+}
