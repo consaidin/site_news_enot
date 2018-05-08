@@ -101,33 +101,36 @@
             margin-top: 20%;
           }
 
-          & input{
-            width: 60%;
-            height: 41.5px;
-            padding: 0 10px;
-            color: #666;
-            outline: none;
-            font-size: 16px;
-            box-sizing: border-box;
-            @include medium-screen{
-              height: 38.5px;
-              width: 78%;
-            }
-          }
-          & button{
-            @include medium-screen{
-              line-height: 38px;
-            }
-            border: none;
-            background: $main-blue;
-            padding: 3px 15px 0 15px;
-            color: #fff;
-            cursor: pointer;
-            font-size: 12px;
-            line-height: 40px;
-            text-transform: uppercase;
-            margin-left: 10px;
+          form{
 
+            & input{
+              width: 60%;
+              height: 41.5px;
+              padding: 0 10px;
+              color: #666;
+              outline: none;
+              font-size: 16px;
+              box-sizing: border-box;
+              @include medium-screen{
+                height: 38.5px;
+                width: 78%;
+              }
+            }
+            & button{
+              @include medium-screen{
+                line-height: 38px;
+              }
+              border: none;
+              background: $main-blue;
+              padding: 3px 15px 0 15px;
+              color: #fff;
+              cursor: pointer;
+              font-size: 12px;
+              line-height: 40px;
+              text-transform: uppercase;
+              margin-left: 10px;
+
+            }
           }
         }
       }
