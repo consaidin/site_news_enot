@@ -13,7 +13,7 @@
       span {
       color: $greyish;
       }
-      .social-icons {
+      .social-footer__link {
         padding-top: 30px;
         @media only screen and(max-width: 834px){
           display: flex;
@@ -23,6 +23,7 @@
 
         }
         a {
+
           color: $greyish;
           transition: all .5s ease;
           padding-right: 20px;
