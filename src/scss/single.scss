@@ -1,3 +1,143 @@
 @import "partials/params";
 @import "partials/mixins";
 
+
+.single-block{
+
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.5rem;
+  .block-left{
+    width: 65%;
+    h3{
+      font-size: 1em;
+      text-transform: uppercase;
+      color: $main-blue;
+      margin-bottom: 1.75rem;
+    }
+    .single-post{
+
+      h1{
+        font-size: 1.75em;
+
+      }
+      span{
+        display: inline-block;
+        margin: 1.75em 0;
+        font-size: 0.7em;
+        padding: 0 1em;
+        color: #afa8a8;
+        text-transform: uppercase;
+        border-right: 1px solid #afa8a8;
+        border-left: 1px solid #afa8a8;
+      }
+      img{
+        width: 100%;
+      }
+
+      p{
+
+
+      }
+    }
+    .telegram-link{
+      border-top: 1px solid $greyish;
+      border-bottom: 1px solid $greyish;
+      padding: 0.75em 0;
+      & a{
+        color: $main-blue;
+      }
+    }
+    .more-theme{
+      margin: 1.625rem 0 1.94em 0;
+      ul{
+        @include clear-list;
+        display: flex;
+        li{
+          margin-right: 1.44em;
+          &:first-child{
+            margin-right: 0;
+          }
+          &:nth-child(2){
+            color: $orange;
+            font-size: 0.75em;
+            line-height: 1.9;
+          }
+          a{
+            font-size: 0.75em;
+            color: $greyish;
+          }
+        }
+      }
+    }
+    .also-read{
+
+
+      .also-read__title{
+        font-size: 1.125rem;
+        color: $black-two;
+        font-weight: 300;
+
+        &::after{
+          content: '';
+          display: block;
+          height: 1px;
+          width: 50px;
+          background-color: $black-two;
+          margin-left: 5px;
+          margin-top: 5px;
+          margin-bottom: 1em;
+        }
+
+      }
+      .also-read__item{
+        padding: 1.69rem 1.44em;
+        background-color: $grey;
+        margin-bottom: 0.44rem;
+
+        a{
+          color: $black-two;
+        }
+      }
+    }
+  }
+  .block-right{
+    width: 30%;
+  }
+}
+#more-theme__active{
+  color: $orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

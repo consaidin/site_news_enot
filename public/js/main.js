@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-
     $(".search-icon").click(function () {
         $(".search").fadeIn(300);
         $(".search-wrapper").addClass("fadeInUp animated");
@@ -14,11 +13,9 @@ $(document).ready(function () {
         $("#top-menu ul li a").removeClass("active");
         $(this).addClass("active");
     });
-    $(".toggle_menu").click(function () {
-        $(".burger").toggleClass("burger_active");
-    });
 
     $(".toggle_menu").click(function () {
+        $(".burger").toggleClass("burger_active");
         if ($(".menu-active").is(":visible")) {
             $(".menu-active").fadeOut(300);
             $(".menu-active ul li a").removeClass("fadeInUp animated");
