@@ -94,9 +94,14 @@
         padding: 1.69rem 1.44em;
         background-color: $grey;
         margin-bottom: 0.44rem;
+        transition: all .6s ease-in-out;
 
         a{
           color: $black-two;
+          transition: all .4s ease-in-out;
+          &:hover{
+            color: $main-blue;
+          }
         }
       }
     }
