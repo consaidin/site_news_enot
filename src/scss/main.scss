@@ -46,7 +46,11 @@ section{
   flex: 1 0 auto;
 }
 
-
+.clear:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 
 
