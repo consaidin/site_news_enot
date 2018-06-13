@@ -18,12 +18,23 @@
         flex-direction: row;
         flex-wrap: wrap;
       }
+      @include small-screen{
+        display: block;
+      }
       .social-networks__item {
         width: 30%;
         @include medium-screen{
           width: 48%;
           &:last-child{
             margin: 1.875rem auto 0 auto;
+          }
+        }
+        @include small-screen{
+          width: auto;
+          margin-bottom: 20px;
+          &:last-child{
+
+            margin-top: 0;
           }
         }
 
