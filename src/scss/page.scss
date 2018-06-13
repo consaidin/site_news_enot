@@ -93,10 +93,71 @@
         }
       }
     }
+    .page-all-news{
+      margin-top: 2.5rem;
 
+      h3{
+        font-size: 1.125rem;
+        text-transform: uppercase;
+        color: $main-blue;
+        margin-bottom: 0.8em;
+      }
+      &__item{
+        border-top: 1px solid $grey;
+        padding: 1em 0;
+        .page-all-news__time{
+          font-size: 0.82em;
+          color: $greyish-brown;
+          float: left;
+          line-height: 1.65;
+        }
+        .page-all-news__inner-wrapper{
+          margin-left: 3.125em;
+          .page-all-news__title{
+
+            a{
+              font-size: 1.125rem;
+              color: $black-medium;
+            }
+
+          }
+          .page-all-news__description{
+            font-size: 0.82em;
+            color: $greyish-brown;
+
+          }
+        }
+      }
+    }
   }
   .block-right {
 
     width: 30%;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
