@@ -23,7 +23,8 @@ $(document).ready(function () {
         } else {
             $(".menu-active").fadeIn(300);
             $(".menu-active ul li a").addClass("fadeInUp animated");
-        };
+        }
+        ;
     });
 
     $(".menu-active ul li a").click(function () {
@@ -34,4 +35,7 @@ $(document).ready(function () {
     $(".video-icon").click(function () {
         $(".video-icon").addClass("video-icon__active");
     });
+
+
+
 });

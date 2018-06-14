@@ -10,7 +10,7 @@
         @media only screen and(max-width: 815px) {
           width: 100%;
         }
-        width: 65%;
+        width: 74%;
         background-color: $light-grey;
         padding: 1rem;
 
@@ -61,11 +61,12 @@
         margin-left: 10px;
 
         & .widgets-top__item{
-          width: 300px;
+
+          margin-bottom: 10px;
 
         }
         & :nth-child(1){
-          margin-bottom: 10px;
+
         }
       }
     }
