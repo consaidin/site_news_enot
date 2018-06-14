@@ -6,7 +6,9 @@
     & .viewport{
       display: flex;
       justify-content: space-between;
+
       & .last-news {
+        position: relative;
         @media only screen and(max-width: 815px) {
           width: 100%;
         }
@@ -45,16 +47,23 @@
           }
         }
         & .more-link{
-          text-align: right;
+          position: absolute;
           font-size: 0.79rem;
           text-transform: uppercase;
-          margin-top: 51px;
+          bottom: 1rem;
+          right: 1rem;
+          @media only screen and(max-width: 815px){
+            position: static;
+            text-align: right;
+            margin-top: 30px;
+          }
           & a{
             color: $orange;
           }
         }
       }
       & .widgets-top {
+
         @media only screen and(max-width: 815px) {
           display: none;
         }
@@ -65,8 +74,8 @@
           margin-bottom: 10px;
 
         }
-        & :nth-child(1){
-
+        & :last-child{
+          margin-bottom: 0;
         }
       }
     }
