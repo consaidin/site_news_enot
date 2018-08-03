@@ -1,13 +1,13 @@
-var gulp = require('gulp');
-var sourcemaps = require('gulp-sourcemaps');
-var sass = require('gulp-sass');
-var concat = require('gulp-concat');
-var autoprefixer = require('gulp-autoprefixer');
-var cleanCss = require('gulp-clean-css');
-var gulpIf = require('gulp-if');
-var browserSync = require('browser-sync').create();
+const gulp = require('gulp');
+const sourcemaps = require('gulp-sourcemaps');
+const sass = require('gulp-sass');
+const concat = require('gulp-concat');
+const autoprefixer = require('gulp-autoprefixer');
+const cleanCss = require('gulp-clean-css');
+const gulpIf = require('gulp-if');
+const browserSync = require('browser-sync').create();
 
-var config = {
+const config = {
     paths: {
         scss: './src/scss/**/*.scss',
         html: './public/index.html'
