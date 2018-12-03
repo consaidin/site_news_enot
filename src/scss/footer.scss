@@ -72,10 +72,16 @@
     }
 
     .footer-menu {
+      @media only screen and(max-width: 940px) {
+        margin: 0 auto;
+      }
       nav {
         padding-top: 115px;
         margin-left: 58px;
+        @include small-screen {
+          margin-left: 25%;
 
+        }
         ul {
           @include clear-list;
 
@@ -96,9 +102,7 @@
       display: flex;
       justify-content: space-around;
       font-size: 1.125rem;
-      @media only screen and(max-width: 940px) {
-        margin: 0 auto;
-      }
+
 
       .footer-contact__mail {
         margin-right: 5px;
