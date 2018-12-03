@@ -96,9 +96,10 @@
       display: flex;
       justify-content: space-around;
       font-size: 1.125rem;
-      @media only screen and(max-width: 940px){
+      @media only screen and(max-width: 940px) {
         margin: 0 auto;
       }
+
       .footer-contact__mail {
         margin-right: 5px;
 
@@ -116,26 +117,6 @@
         }
       }
     }
-
-    //.footer-forbid {
-    //  display: flex;
-    //  @media only screen and(max-width: 834px){
-    //    flex-direction: column;
-    //  }
-    //
-    //}
-    //p {
-    //  width: 48%;
-    //  color: $greyish;
-    //  margin: 0;
-    //  padding-bottom: 50px;
-    //  &:last-child {
-    //    padding-right: 0;
-    //  }
-    //  @media only screen and(max-width: 834px){
-    //    width: 100%;
-    //  }
-    //}
   }
 }
 
